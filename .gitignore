@@ -22,3 +22,5 @@ yarn.lock
 
 .idea
 .DS_Store
+
+index.bundle.js*

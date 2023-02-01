@@ -16,7 +16,8 @@
 		"dev": "tsc -w & mocha -w ./test/*.js",
 		"pretest": "tsc -m commonjs",
 		"release": "yarn build && np",
-		"prepare": "npm run build"
+		"prepare": "npm run build",
+		"pack": "webpack"
 	},
 	"keywords": [
 		"parser",
@@ -37,12 +38,15 @@
 		"he": "1.2.0"
 	},
 	"devDependencies": {
+		"@babel/core": "^7.15.5",
+		"@babel/preset-env": "^7.15.6",
 		"@types/entities": "latest",
 		"@types/he": "latest",
 		"@types/node": "latest",
 		"@typescript-eslint/eslint-plugin": "latest",
 		"@typescript-eslint/eslint-plugin-tslint": "latest",
 		"@typescript-eslint/parser": "latest",
+		"babel-loader": "^8.2.2",
 		"blanket": "latest",
 		"cheerio": "^1.0.0-rc.5",
 		"del-cli": "latest",
@@ -60,7 +64,9 @@
 		"should": "latest",
 		"spec": "latest",
 		"travis-cov": "latest",
-		"typescript": "next"
+		"typescript": "next",
+		"webpack": "^5.52.1",
+		"webpack-cli": "^4.8.0"
 	},
 	"config": {
 		"blanket": {
